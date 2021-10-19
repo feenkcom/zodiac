@@ -5,4 +5,5 @@ baseline: spec
 		spec postLoadDoIt: #postLoadCore:.
 		spec 
 			package: 'Zodiac-Core';
+			package: 'Zodiac-Extra';
 			package: 'Zodiac-Tests' ]
