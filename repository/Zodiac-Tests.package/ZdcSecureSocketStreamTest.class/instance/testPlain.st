@@ -4,6 +4,7 @@ testPlain
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
 	query := 'Smalltalk'.
 	stream := ZdcSecureSocketStream openConnectionToHostNamed: 'duckduckgo.com' port: 443.
+	stream timeout: 30.
 	request := nil.
 	response := [
 		request := String streamContents: [ :out |
